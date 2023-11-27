@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*----------------Encabezado-de-la-Pagina----------------*/
+header {
+    overflow: hidden;
+    position: relative;
+    height: 440px;
+}
+
+header h1 {
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 3.5em;
+    font-family: Great Vibes;
+    position: relative;
+    color: #5082c5;
+    text-shadow: 0px 0px 5px white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+header #btn-menu {
+    display: none;
+}
+
+header .icon-menu{
+    display:none;
+    border-right: 1px solid white;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    width: 40px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+header .icon-menu:hover{
+    background: rgba(80, 130, 197, 0.5);
+}
+
+header nav{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+
+header a{
+    border-right: 1px solid white;
+    padding: 15px 25px 15px 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li:hover{
+    background: rgba(80, 130, 197, 0.5);
+    cursor: pointer;
+}
+
+header .active {
+    background: rgba(80, 130, 197, 0.8);
+}
+
+
+header .img-uno{
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*------------------------Seccion uno------------------------*/
+
+.section-uno{
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.section-uno h1{
+    font-size: 3.99em;
+    text-align: center;
+    font-family: Great Vibes;
+    margin-top: 20px;
+}
+
+.section-uno hr {
+    width: 50%;
+    margin: auto;
+}
+
+.section-uno .contenedor {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+    overflow: hidden;
+}
+
+.section-uno .icon {
+    text-shadow: 0px 0px 1px black;
+    color: #5082c5;
+    font-size: 15vh;
+}
+
+.section-uno div h3{
+    font-size: 1.5em;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    color: white;
+}
+
+.section-uno div {
+    text-align: center;
+    margin: 10px 10px 25px 10px;
+    width: 20pc;
+}
+
+
+/*---------------------Seccion dos---------------------*/
+
+.section-dos {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+.section-dos h1 {
+    font-size: 3.5em;
+    text-align: center;
+    font-family: Great Vibes;
+    margin-top: 20px;
+}
+
+.section-dos hr {
+    width: 50%;
+    margin: auto;
+}
+
+.section-dos p {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family:cursive;
+}
+
+/*---------------------Pie de pagina---------------------*/
+
+footer{
+    background: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+
+/*----------------------Keyframes----------------------*/
+@media(max-width:768px){
+    /*-------Encabezado-------*/
+    header {
+        height: 360px;
+    }
+
+    header .conten-menu {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        position: relative;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    header .icon-menu {
+        display:block
+    }
+    
+    header nav{
+        width: 100%;
+        position: absolute;
+        margin-left: -150%;
+        transition: all 1s;
+    }
+    
+    header ul {
+        display: block;
+    }
+    
+    header ul li{
+        position: relative;
+        border-bottom: 1px solid white;
+   
+    }
+    
+    header a{
+        padding: 10px 0px 10px 0px;
+        display: block;
+    }
+
+    
+    header #btn-menu:checked ~ nav {
+        margin: 0;
+    }
+    
+    /*-------Seccion-uno-------*/
+    
+    .section-uno .contenedor {
+        width: 100%
+        overflow: hidden;
+    }
+    
+}
+

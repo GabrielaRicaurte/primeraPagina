@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*----------------Encabezado-de-la-Pagina----------------*/
+
+header {
+    overflow: hidden;
+    position: relative;
+}
+
+header h1 {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 3.5em;
+    font-family: Great Vibes;
+    position: relative;
+    color: #5082c5;
+    text-shadow: 0px 0px 7px white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+header #btn-menu {
+    display: none;
+}
+
+header .icon-menu{
+    display:none;
+    border-right: 1px solid white;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    width: 40px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+header .icon-menu:hover{
+    background: rgba(80, 130, 197, 0.5);
+}
+
+header nav{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 5;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+
+header a{
+    border-right: 1px solid white;
+    padding: 15px 25px 15px 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li:hover{
+    background: rgba(80, 130, 197, 0.5);
+    cursor: pointer;
+}
+
+header .active {
+    background: rgba(80, 130, 197, 0.8);
+}
+
+/*------------------------------Seccion------------------------------*/
+.seccion-uno {
+    box-shadow: 0px 10px 30px black;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border: 1px solid black;
+    height: 350px;
+    padding: 30px;
+    width: 350px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 10px;
+}
+
+.seccion-uno .icon-fire {
+    font-size: 10em;
+    color: #5082c5;
+    text-shadow: 0px 0px 10px black;
+}
+
+.seccion-uno h1 {
+    font-size: 35px;
+    margin-top: 30px;
+    color: white;
+    font-family: Great Vibes;
+    text-shadow: 0px 0px 10px white;
+}
+
+.seccion-uno a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: black;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/*---------------------Pie de pagina---------------------*/
+
+footer{
+    background: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/*----------------------Keyframes----------------------*/
+@media(max-width:768px){
+    /*-------Encabezado-------*/
+    header {
+        height: 280px;
+    }
+
+    header .conten-menu {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        position: relative;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    header .icon-menu {
+        display:block
+    }
+    
+    header nav{
+        width: 100%;
+        position: absolute;
+        margin-left: -150%;
+        transition: all 1s;
+
+    }
+    
+    header ul {
+        display: block;
+    }
+    
+    header ul li{
+        position: relative;
+        border-bottom: 1px solid white;
+   
+    }
+    
+    header a{
+        padding: 10px 0px 10px 0px;
+        display: block;
+    }
+
+    
+    header #btn-menu:checked ~ nav {
+        margin: 0;
+    }
+    
+    /*---------Seccion---------*/
+    
+    .seccion-uno {
+        height: 360px;
+        width: 250px;
+        margin-top: 0px;
+    }
+    
+    .seccion-uno a {
+        margin: 0;
+    }
+    
+}

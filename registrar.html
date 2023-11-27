@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>TuWeb</title>
+        <link rel="stylesheet" href="fonts/icon/style.css">
+        <link rel="stylesheet" href="keyframes/keyframes.css">
+        <link rel="stylesheet" href="style/registro.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo-uno info-uno">TuWeb</h1>
+            <div class="conten-menu">
+                <input type="checkbox" id="btn-menu" class="info-uno">
+                <label for="btn-menu"><span class="icon-menu info"></span></label>
+                <nav class="info-uno">
+                    <ul>
+                        <li><a href="index.html">Principal</a></li>
+                        <li><a href="informacion.html">Informacion</a></li>
+                        <li><a href="contactanos.html">Contactos</a></li>
+                        <li class="active"><a href="registrar.html">Registrate</a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </header> 
+        
+        <section class="seccion-uno">
+            <form action="php/registrar.php" method="post">
+                <h1>Registrate</h1>
+                <input class="input" type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+                <input class="input" type="text" name="apellido" placeholder="Ingrese su Apellido" required>
+                <input class="input" type="text" name="usuario" placeholder="Ingrese Usuario" required>
+                <input class="input" type="email" name="correo" placeholder="Ingrese su Correo" required>
+                <input class="input" type="password" name="clave" placeholder="Ingrese Clave" required>
+                <input class="btn-registrar" type="submit" value="Registrar">
+            </form>
+        </section>
+             
+    </body>
+    <footer class="pie-de-pagina">Derechos Reselvados 2004-2020</footer>
+</html>

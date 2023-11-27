@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*----------------Encabezado-de-la-Pagina----------------*/
+
+header {
+    overflow: hidden;
+    position: relative;
+}
+
+header h1 {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 3.5em;
+    font-family: Great Vibes;
+    position: relative;
+    color: #5082c5;
+    text-shadow: 0px 0px 7px white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+header #btn-menu {
+    display: none;
+}
+
+header .icon-menu{
+    display:none;
+    border-right: 1px solid white;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    width: 40px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+header .icon-menu:hover{
+    background: rgba(80, 130, 197, 0.5);
+}
+
+header nav{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 5;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+
+header a{
+    border-right: 1px solid white;
+    padding: 15px 25px 15px 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li:hover{
+    background: rgba(80, 130, 197, 0.5);
+    cursor: pointer;
+}
+
+header .active {
+    background: rgba(80, 130, 197, 0.8);
+}
+
+/*------------------------Seccion------------------------*/
+
+.seccion-uno {
+    max-width: 500px; 
+    border-radius: 5px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    height: 400px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.seccion-uno h1 {
+    font-family: Great Vibes ;
+    font-size: 50px;
+    padding: 20px 5px 0px 5px;
+    text-align: center;
+    color: rgba(80, 130, 197, 0.8);
+    text-shadow: 0px 0px 7px black;
+    margin-bottom: 25px;
+}
+
+.seccion-uno .input {
+    display: flex;
+    width: 80%; 
+    padding: 12px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 20px;
+}
+
+.seccion-uno .btn-registrar {
+    cursor: pointer;
+    font-size: 17px;
+    margin: auto;
+    display: block;
+    margin-top: 0px;
+    width: 60%;
+    height: 40px;
+    background: 1px solid white;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------Pie de pagina---------------------*/
+
+footer{
+    background: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/*----------------------Keyframes----------------------*/
+@media(max-width:768px){
+    /*-------Encabezado-------*/
+    header {
+        height: 280px;
+    }
+
+    header .conten-menu {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        position: relative;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    header .icon-menu {
+        display:block
+    }
+    
+    header nav{
+        width: 100%;
+        position: absolute;
+        margin-left: -150%;
+        transition: all 1s;
+
+    }
+    
+    header ul {
+        display: block;
+    }
+    
+    header ul li{
+        position: relative;
+        border-bottom: 1px solid white;
+   
+    }
+    
+    header a{
+        padding: 10px 0px 10px 0px;
+        display: block;
+    }
+
+    
+    header #btn-menu:checked ~ nav {
+        margin: 0;
+    }
+    
+    /*seccion-uno*/
+    
+    .seccion-uno {
+        margin-top: 0;
+    }
+    

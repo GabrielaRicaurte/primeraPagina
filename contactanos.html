@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>TuWeb</title>
+        <link rel="stylesheet" href="fonts/icon/style.css">
+        <link rel="stylesheet" href="keyframes/keyframes.css">
+        <link rel="stylesheet" href="style/contactanos.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo-uno info-uno">TuWeb</h1>
+            <div class="conten-menu">
+                <input type="checkbox" id="btn-menu" class="info-uno">
+                <label for="btn-menu"><span class="icon-menu info"></span></label>
+                <nav class="info-uno">
+                    <ul>
+                        <li><a href="index.html">Principal</a></li>
+                        <li><a href="informacion.html">Informacion</a></li>
+                        <li class="active"><a href="#">Contactos</a></li>
+                        <li><a href="registrar.html">Registrate</a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </header> 
+        <h1 class="h1-pricipal">Redes Sociales</h1>
+        <hr class="hr-principal">
+        <section class="seccion-uno">
+            <article class="red-uno">
+                <span class="icon-facebook2 icon"></span>
+                <p><a href="#">TuWeb online</a></p>
+            </article>
+            <article class="red-dos">
+                <span class="icon-instagram icon"></span>
+                <p><a href="#">@TuWeb_Online</a></p>
+            </article>
+            <article class="red-tres">
+                <span class="icon-twitter icon"></span>
+                <p><a href="#">@TuWeb2004</a></p>
+            </article>
+        </section>
+        <section class="seccion-dos">
+            <form action="php/contactos.php">
+                <h1>Contactanos</h1>
+                <hr>
+                <input type="text" name="asunto" placeholder="Ingrese el Asunto" required class="input">
+                <input type="text" name="correo" placeholder="Ingrese su Correo" required class="input">
+                <input type="text" name="usuario" placeholder="Ingrese su Usuario" required class="input">
+                <textarea name="mensaje" placeholder="Escriba aqui su Mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="btn-enviar">
+            </form>
+        </section>
+    </body>
+    <footer class="pie-de-pagina">Derechos Reselvados 2004-2020</footer>
+</html>
